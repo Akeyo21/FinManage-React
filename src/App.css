@@ -4,5 +4,7 @@
 /* #001e3c - card background  */
 
 .App {
-  backgroundColor: '#001e3c';
+  background-color: #D6EAF2;
+  width: 100vw;
+  height:100vh
 }
