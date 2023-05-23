@@ -5,8 +5,8 @@ import ListItemText from "@mui/material/ListItemText";
 import ListItemButton from "@mui/material/ListItemButton";
 
 import AppLink from "./App.link.tsx";
+import { drawerBackgroundColor } from "../utils/palette.ts";
 const AppRouter = () => {
-
   const appRoutes = [
     {
       pageName: "Bills",
@@ -23,7 +23,14 @@ const AppRouter = () => {
   ];
 
   return (
-    <Drawer variant="permanent">
+    <Drawer
+      variant="permanent"
+      PaperProps={{
+        sx: {
+          backgroundColor: drawerBackgroundColor,
+        },
+      }}
+    >
       <List>
         {appRoutes.map(({ pageName, route }) => (
           <ListItemButton component={AppLink} to={route}>
