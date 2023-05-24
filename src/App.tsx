@@ -8,14 +8,14 @@ import { mainBackgroundColor } from "./utils/palette.ts";
 export const drawerWidth = 250;
 function App() {
   return (
-    <div style={{ overflow: "hidden", backgroundColor:mainBackgroundColor, height: '100vh' }}>
+    <div style={{ overflow: "scroll", backgroundColor:mainBackgroundColor, height: '100vh' }}>
       <AppRouter />
       <Box
         component="main"
         sx={{
           ml: `${drawerWidth}px`,
           width: `calc(100% - ${drawerWidth}px)`,
-          overflow: "hidden",
+          overflow: "scroll",
         }}
       >
         <Outlet />
