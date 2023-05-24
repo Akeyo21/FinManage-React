@@ -6,6 +6,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 
 import AppLink from "./App.link.tsx";
 import { drawerBackgroundColor } from "../utils/palette.ts";
+import { drawerWidth } from "../App.tsx";
 const AppRouter = () => {
   const appRoutes = [
     {
@@ -28,6 +29,7 @@ const AppRouter = () => {
       PaperProps={{
         sx: {
           backgroundColor: drawerBackgroundColor,
+          width: drawerWidth
         },
       }}
     >

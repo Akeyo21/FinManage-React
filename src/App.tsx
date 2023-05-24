@@ -5,13 +5,13 @@ import "./App.css";
 
 import AppRouter from "./router/App.router.tsx";
 
+export const drawerWidth = 250;
 function App() {
 
   return (
-    <div className="App">
+    <div className="App" >
       <AppRouter/>
-
-      <Box ml={10} className="App">
+      <Box component="main" sx={{ml:`${drawerWidth}px`, width:`calc(100% - ${drawerWidth}px)`  }}>
         <Outlet />
       </Box>
     </div>
