@@ -6,7 +6,8 @@ import Grid from "@mui/material/Grid";
 
 import SectionHeader from "../../../components/SectionHeader.tsx";
 import { drawerBackgroundColor } from "../../../utils/palette.ts";
-import { billsByUniqueDueDate } from "./UniqueDueDateBills.ts";
+import { billsByUniqueDueDate } from "./BillsByDate.service.ts";
+import UniqueDueDateBills from "./UniqueDueDateBills.tsx";
 
 const BillsByDateContainer = () => {
   const { dates, billsDueDateMap } = billsByUniqueDueDate();
@@ -30,19 +31,10 @@ const BillsByDateContainer = () => {
       {dates.map(
         (uniqueDueDate) =>
           billsDueDateMap[uniqueDueDate] && (
-            <>
-              <Card sx={{ m: 2 }}>
-                <CardContent>
-                  <Typography variant="h5" fontWeight={500}>
-                    {uniqueDueDate} of every month
-                  </Typography>
-                  <Divider />
-                  {billsDueDateMap[uniqueDueDate]?.map((bill) => (
-                    <Typography m={1}>{bill.name}</Typography>
-                  ))}
-                </CardContent>
-              </Card>
-            </>
+            <UniqueDueDateBills
+              bills={billsDueDateMap[uniqueDueDate]}
+              dueDate={uniqueDueDate}
+            />
           )
       )}
     </Grid>
