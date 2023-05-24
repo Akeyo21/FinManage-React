@@ -1,9 +1,9 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App.tsx";
-import Bills from "../Bills.tsx";
-import DueBills from "../DueBills.tsx";
-import PastBills from "../PastBills.tsx"
+import Bills from "../screens/Bills.tsx";
+import DueBills from "../screens/DueBills.tsx";
+import PastBills from "../screens/PastBills.tsx"
 
 export const appRoutes = createBrowserRouter([
   {
