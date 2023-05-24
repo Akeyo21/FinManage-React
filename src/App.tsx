@@ -3,7 +3,7 @@ import { Outlet } from "react-router-dom";
 import Box from "@mui/material/Box";
 import "./App.css";
 
-import AppRouter from "./Router/App.router.tsx";
+import AppRouter from "./router/App.router.tsx";
 
 function App() {
 

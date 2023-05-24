@@ -4,7 +4,7 @@ import reportWebVitals from "./reportWebVitals";
 import { RouterProvider } from "react-router-dom";
 
 import "./index.css";
-import { appRoutes } from "./Router/Routes.tsx";
+import { appRoutes } from "./router/Routes.tsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
