@@ -23,7 +23,7 @@ const AllBillsContainer = () => {
     >
       <SectionHeader text="Bills" />
 
-      <Box mt={10}>
+      <Box>
         {billSamples.map((bill) => (
           <BillCard bill={bill} key={bill.id} />
         ))}
