@@ -5,13 +5,9 @@ import CardActionArea from "@mui/material/CardActionArea";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
-import { Bill } from "./Bills.types.ts";
-import { billTypeIconMap } from "./BillTypeIcon.map.tsx";
-import {
-  drawerBackgroundColor,
-  iconsColor,
-  mainBackgroundColor,
-} from "../../utils/palette.ts";
+import { Bill } from "../Bills.types.ts";
+import { billTypeIconMap } from "../BillTypeIcon.map.tsx";
+import { iconsColor } from "../../../utils/palette.ts";
 
 type props = {
   bill: Bill;

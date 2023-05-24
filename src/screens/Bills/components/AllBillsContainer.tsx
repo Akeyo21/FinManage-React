@@ -1,10 +1,10 @@
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
 
 import BillCard from "./BillCard.tsx";
-import { billSamples } from "./Bills.sample.ts";
-import { drawerBackgroundColor } from "../../utils/palette.ts";
+import { billSamples } from "../Bills.sample.ts";
+import { drawerBackgroundColor } from "../../../utils/palette.ts";
+import SectionHeader from "../../../components/SectionHeader.tsx";
 
 const AllBillsContainer = () => {
   return (
@@ -18,17 +18,16 @@ const AllBillsContainer = () => {
         backgroundColor: drawerBackgroundColor,
         height: "100vh",
         borderRadius: "1%",
+        overflow: "scroll",
       }}
     >
-      <Box m={2}>
-        <Typography variant="h4" fontWeight={800}>
-          BILLS
-        </Typography>
-      </Box>
+      <SectionHeader text="Bills" />
 
-      {billSamples.map((bill) => (
-         <BillCard bill={bill} key={bill.id} />
-      ))}
+      <Box mt={10}>
+        {billSamples.map((bill) => (
+          <BillCard bill={bill} key={bill.id} />
+        ))}
+      </Box>
     </Grid>
   );
 };
