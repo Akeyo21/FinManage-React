@@ -32,8 +32,8 @@ const AppRouter = () => {
       }}
     >
       <List>
-        {appRoutes.map(({ pageName, route }) => (
-          <ListItemButton component={AppLink} to={route}>
+        {appRoutes.map(({ pageName, route }, index) => (
+          <ListItemButton component={AppLink} to={route} key={index}>
             <ListItemText primary={pageName} />
           </ListItemButton>
         ))}
