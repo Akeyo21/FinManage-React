@@ -1,6 +1,6 @@
 import Grid from "@mui/material/Grid";
-import AllBillsContainer from "./components/AllBillsContainer.tsx";
-import BillsByDateContainer from "./components/BillsByDateContainer.tsx";
+import AllBillsContainer from "./components/AllBillsContainer";
+import BillsByDateContainer from "./components/BillsByDateContainer";
 
 const Bills = () => {
   return (

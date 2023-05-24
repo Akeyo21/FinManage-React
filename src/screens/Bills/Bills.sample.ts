@@ -1,5 +1,5 @@
-import { BillType } from "./BillTypeIcon.map.tsx";
-import { Bill } from "./Bills.types.ts";
+import { BillType } from "./BillTypeIcon.map";
+import { Bill } from "./Bills.types";
 
 export const billSamples: Bill[] = [
   {

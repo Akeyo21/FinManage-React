@@ -1,13 +1,10 @@
-import CardContent from "@mui/material/CardContent";
-import Card from "@mui/material/Card";
-import Typography from "@mui/material/Typography";
-import Divider from "@mui/material/Divider";
+import React from 'react'
 import Grid from "@mui/material/Grid";
 
-import SectionHeader from "../../../components/SectionHeader.tsx";
-import { drawerBackgroundColor } from "../../../utils/palette.ts";
-import { billsByUniqueDueDate } from "./BillsByDate.service.ts";
-import UniqueDueDateBills from "./UniqueDueDateBills.tsx";
+import SectionHeader from "../../../components/SectionHeader";
+import { drawerBackgroundColor } from "../../../utils/palette";
+import { billsByUniqueDueDate } from "./BillsByDate.service";
+import UniqueDueDateBills from "./UniqueDueDateBills";
 
 const BillsByDateContainer = () => {
   const { dates, billsDueDateMap } = billsByUniqueDueDate();

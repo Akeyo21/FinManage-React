@@ -1,9 +1,10 @@
+import React from 'react'
 import CardContent from "@mui/material/CardContent";
 import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 
-import {Bill} from '../Bills.types.ts'
+import {Bill} from '../Bills.types'
 type props= {
   bills: Bill[]
   dueDate: string

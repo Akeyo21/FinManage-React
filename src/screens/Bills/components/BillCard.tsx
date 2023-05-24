@@ -5,9 +5,9 @@ import CardActionArea from "@mui/material/CardActionArea";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
-import { Bill } from "../Bills.types.ts";
-import { billTypeIconMap } from "../BillTypeIcon.map.tsx";
-import { iconsColor } from "../../../utils/palette.ts";
+import { Bill } from "../Bills.types";
+import { billTypeIconMap } from "../BillTypeIcon.map";
+import { iconsColor } from "../../../utils/palette";
 
 type props = {
   bill: Bill;

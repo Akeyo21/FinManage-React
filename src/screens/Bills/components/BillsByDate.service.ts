@@ -1,4 +1,4 @@
-import { billSamples } from "../Bills.sample.ts";
+import { billSamples } from "../Bills.sample";
 
 export const billsByUniqueDueDate = () => {
   const allDueDates = billSamples.map(({ dueDate }) => dueDate).flat();

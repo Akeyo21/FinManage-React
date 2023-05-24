@@ -1,10 +1,10 @@
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 
-import BillCard from "./BillCard.tsx";
-import { billSamples } from "../Bills.sample.ts";
-import { drawerBackgroundColor } from "../../../utils/palette.ts";
-import SectionHeader from "../../../components/SectionHeader.tsx";
+import BillCard from "./BillCard";
+import { billSamples } from "../Bills.sample";
+import { drawerBackgroundColor } from "../../../utils/palette";
+import SectionHeader from "../../../components/SectionHeader";
 
 const AllBillsContainer = () => {
   return (

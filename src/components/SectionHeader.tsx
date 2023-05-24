@@ -1,6 +1,7 @@
+import React from 'react'
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import { drawerBackgroundColor } from "../utils/palette.ts";
+import { drawerBackgroundColor } from "../utils/palette";
 
 type props = {
   text: string;

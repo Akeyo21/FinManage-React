@@ -4,9 +4,9 @@ import Drawer from "@mui/material/Drawer";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemButton from "@mui/material/ListItemButton";
 
-import AppLink from "./App.link.tsx";
-import { drawerBackgroundColor } from "../utils/palette.ts";
-import { drawerWidth } from "../App.tsx";
+import AppLink from "./App.link";
+import { drawerBackgroundColor } from "../utils/palette";
+import { drawerWidth } from "../App";
 const AppRouter = () => {
   const appRoutes = [
     {

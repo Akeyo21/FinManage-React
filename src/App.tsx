@@ -2,8 +2,8 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Box from "@mui/material/Box";
 
-import AppRouter from "./router/App.router.tsx";
-import { mainBackgroundColor } from "./utils/palette.ts";
+import AppRouter from "./router/App.router";
+import { mainBackgroundColor } from "./utils/palette";
 
 export const drawerWidth = 250;
 function App() {
