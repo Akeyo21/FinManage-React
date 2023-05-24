@@ -11,10 +11,7 @@ const SectionHeader = ({ text }: props) => {
     <Box
       m={2}
       sx={{
-        position: "fixed",
         backgroundColor: drawerBackgroundColor,
-        width: 'auto',
-        zIndex: 100,
       }}
     >
       <Typography variant="h4" fontWeight={800} textTransform="uppercase">
