@@ -5,11 +5,14 @@ import { RouterProvider } from "react-router-dom";
 
 import "./index.css";
 import { appRoutes } from "./router/Routes";
-
+import { ThemeProvider } from "@mui/material";
+import { theme } from "./utils/app.theme";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={appRoutes} />
+    <ThemeProvider theme={theme}>
+      <RouterProvider router={appRoutes} />
+    </ThemeProvider>
   </React.StrictMode>
 );
 
