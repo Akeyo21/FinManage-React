@@ -7,7 +7,7 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
 import { Bill } from "../Bills.types";
-import { BillType, billTypeIconMap } from "../BillTypeIcon.map";
+import { billTypeIconMap } from "../BillTypeIcon.map";
 import { iconsColor } from "../../../utils/palette";
 
 type props = {
