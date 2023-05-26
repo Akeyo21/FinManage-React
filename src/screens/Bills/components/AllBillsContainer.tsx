@@ -1,10 +1,12 @@
-import React from 'react'
+import React from "react";
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 
 import BillCard from "./BillCard";
 import { billSamples } from "../Bills.sample";
-import { drawerBackgroundColor } from "../../../utils/palette";
+import {
+  drawerBackgroundColor,
+} from "../../../utils/palette";
 import SectionHeader from "../../../components/SectionHeader";
 
 const AllBillsContainer = () => {
