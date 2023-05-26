@@ -3,9 +3,9 @@ import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 
 import BillCard from "./BillCard";
-import { billSamples } from "../Bills.sample";
-import { drawerBackgroundColor, iconsColor } from "../../../utils/palette";
-import SectionHeader from "../../../components/SectionHeader";
+import { billSamples } from "../../Bills.sample";
+import { drawerBackgroundColor, iconsColor } from "../../../../utils/palette";
+import SectionHeader from "../../../../components/SectionHeader";
 import {
   InputLabel,
   Modal,
@@ -14,7 +14,7 @@ import {
   MenuItem,
   FormControl,
 } from "@mui/material";
-import { BillType } from "../Bills.types";
+import { BillType } from "../../Bills.types";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 

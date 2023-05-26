@@ -1,5 +1,5 @@
-import { billSamples } from "../Bills.sample";
-import { Bill } from "../Bills.types";
+import { billSamples } from "../../Bills.sample";
+import { Bill } from "../../Bills.types";
 
 type billsByUniqueDateType = {
   dates: string[];

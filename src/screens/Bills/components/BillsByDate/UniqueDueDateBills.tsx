@@ -4,7 +4,7 @@ import Card from "@mui/material/Card";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 
-import {Bill} from '../Bills.types'
+import {Bill} from '../../Bills.types'
 type props= {
   bills: Bill[]
   dueDate: string

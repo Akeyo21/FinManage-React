@@ -1,8 +1,8 @@
 import React from 'react'
 import Grid from "@mui/material/Grid";
 
-import SectionHeader from "../../../components/SectionHeader";
-import { drawerBackgroundColor } from "../../../utils/palette";
+import SectionHeader from "../../../../components/SectionHeader";
+import { drawerBackgroundColor } from "../../../../utils/palette";
 import { billsByUniqueDueDate } from "./BillsByDate.service";
 import UniqueDueDateBills from "./UniqueDueDateBills";
 
