@@ -1,4 +1,8 @@
-import { BillType } from "./BillTypeIcon.map";
+export enum BillType {
+  Spending = "Spending",
+  Savings = "Savings",
+  Generosity = "Generosity",
+}
 
 export type Bill = {
   id: string;
